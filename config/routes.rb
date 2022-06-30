@@ -4,4 +4,5 @@ Rails.application.routes.draw do
       get 'home/index'
     end
   end  
+  root to: 'api/v1/home#index'
 end
