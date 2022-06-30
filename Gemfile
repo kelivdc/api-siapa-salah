@@ -46,4 +46,11 @@ group :development do
   # gem "spring"
 end
 
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'blueprinter' #API template
+gem 'dotenv-rails', groups: [:development, :test] #For .env
+gem 'pagy', '~> 5.1' #Record pagination
+
+# For search query
+gem 'ransack'
+gem 'time_ago_in_words'
+gem 'dotiw'
