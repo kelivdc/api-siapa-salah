@@ -3,11 +3,11 @@
 one:
   name: MyString
   slug: MyString
-  publish: false
   sort: 1
+  publish: false
 
 two:
   name: MyString
   slug: MyString
-  publish: false
   sort: 1
+  publish: false
