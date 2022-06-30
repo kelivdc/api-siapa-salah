@@ -55,3 +55,5 @@ gem 'ransack'
 gem 'time_ago_in_words'
 gem 'dotiw'
 gem 'friendly_id', '~> 5.4.0'
+
+gem 'rack-cors'
