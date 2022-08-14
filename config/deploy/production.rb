@@ -7,6 +7,9 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 server '168.138.164.218', user: 'deploy', roles: %w{app db web}
+set :ssh_options, {
+    port: 22222
+}
 
 
 # role-based syntax
