@@ -9,7 +9,12 @@ module JsonWebToken
     end
 
     def jwt_decode(token)
-        decoded = JWT.decode token, SECRET_KEY, true, { algorithm: 'HS256' }
-        HashWithIndifferentAccess.new decoded
+        begin
+            decoded = JWT.decode token, SECRET_KEY, true, { algorithm: 'HS256' }
+            decoded[0]['admin_id']
+        rescue
+            false
+        end
+        # HashWithIndifferentAccess.new decoded
     end
 end

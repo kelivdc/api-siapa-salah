@@ -1,4 +1,4 @@
 class CategoryBlueprint < Blueprinter::Base
-    identifier :slug
-    fields :name
+    identifier :id
+    fields :name, :slug, :sort, :publish
 end
