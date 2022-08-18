@@ -66,7 +66,7 @@ gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 # gem 'uglifier'
-gem 'strscan'
+gem 'strscan', '3.0.0'
 
 # group :assets do
 #   gem 'therubyracer'
