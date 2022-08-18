@@ -235,6 +235,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.3)
   ransack
+  strscan
   time_ago_in_words
   tzinfo-data
 
