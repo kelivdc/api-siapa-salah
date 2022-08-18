@@ -17,15 +17,16 @@
 default: &default
   adapter: mysql2
   encoding: utf8mb4
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: dev
+  password: localhost
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: siapasalah_database
-  username: <%= ENV["PG_USERNAME"] %>
-  password: <%= ENV["PG_PASSWORD"] %>
+  database: paniwisata_dev
+  # username: dev
+  # password: localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -59,9 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: siapasalah_test
-  username: <%= ENV["PG_USERNAME"] %>
-  password: <%= ENV["PG_PASSWORD"] %>
+  database: paniwisata_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
