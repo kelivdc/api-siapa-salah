@@ -129,6 +129,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.1)
     msgpack (1.5.2)
+    mysql2 (0.5.4)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -155,7 +156,6 @@ GEM
     orm_adapter (0.5.0)
     pagy (5.10.1)
       activesupport
-    pg (1.4.1)
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -234,8 +234,8 @@ DEPENDENCIES
   dotiw
   friendly_id (~> 5.4.0)
   jwt
+  mysql2 (~> 0.5)
   pagy (~> 5.1)
-  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.3)
