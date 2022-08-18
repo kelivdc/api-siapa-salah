@@ -65,3 +65,10 @@ gem 'capistrano', '~> 3.11'
 gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+
+# group :assets do
+#   gem 'therubyracer'
+#   gem 'sass-rails', "  ~> 3.1.0"
+#   gem 'coffee-rails', "~> 3.1.0"
+#   gem 'uglifier'
+# end
