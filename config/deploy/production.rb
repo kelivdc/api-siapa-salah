@@ -6,7 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server '168.138.191.75', user: 'deploy', roles: %w{app db web}
+server '168.138.191.75', user: 'deploy', roles: %w{app db}
 set :ssh_options, {
     port: 22222
 }
